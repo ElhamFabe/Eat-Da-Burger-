@@ -1,0 +1,8 @@
+* folder structure
+
+* installation
+ - npm init -y -->done
+  - npm install exress -->done
+ - npm install express-handlebars -->done
+ - npm install mysql-->done
+- npm i dotenv -->done
