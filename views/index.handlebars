@@ -25,14 +25,14 @@
     </section>
     <section class="col-md-6">
         <article class="card" id="burgersList">
-            <h2>Burgers Ready to Devour/h2>
-                <ul>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
+            <h2>Burgers Ready to Devour</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
         </article>
     </section>
     <section class="row">
@@ -49,8 +49,6 @@
 
         </article>
     </section>
-    <footer>
-        <h1 class="footNote">Eat Da Burger Application 2020</h1>
-    </footer>
+   
 
 </main>
