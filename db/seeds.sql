@@ -1,19 +1,24 @@
 INSERT INTO burgers
-(burger_name, devour)
+    (burger_name)
 VALUES
-('Truffle Burger', true),
-
+    ('Truffle Burger');
 INSERT INTO burgers
-(burger_name)
+    (burger_name)
 VALUES
-('Veggie Burger'),
-
+    ('Ultimate MacNCheese burger');
 INSERT INTO burgers
-(burger_name, devour)
+    (burger_name, devoured)
 VALUES
-('Ultimate Mac n Cheese burger', true),
-
+    ('Veggie Burger', true);
 INSERT INTO burgers
-(burger_name)
+    (burger_name, devoured)
 VALUES
-('Cheeseburger');
+    ('Spicy Baja Burger', true);
+INSERT INTO burgers
+    (burger_name, devoured)
+VALUES
+    ('Classic Cheeseburger', true);
+INSERT INTO burgers
+    (burger_name)
+VALUES
+    ('Quesadilla Burger');
