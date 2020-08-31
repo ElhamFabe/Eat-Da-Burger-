@@ -1,10 +1,25 @@
   body {
-    background-color: lightsteelblue;
+    background-color: rgb(238, 200, 29);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    justify-items: center;
 
   }
   .centerText {
     text-align:center;
   }
   
+  .card {
+    background-color: lightsteelblue;
+    font-family: cursive;
+    text-align:center;
+    border-radius: 2rem;
+  
+  }
+#burgersList {
+  background-color: rosybrown;
+  font-family: cursive;
+  text-align:center;
+  border-radius: 2rem;
+  
+}
