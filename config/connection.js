@@ -1,27 +1,32 @@
 var mysql = require('mysql');
+const e = require('express');
 
 
 require('dotenv').config();
 // console.log("process.env", process.env)
-
+var connection;
 
 // create connection information for sql databaase
-var connection = mysql.createConnection({
-    // host
-    host: "localhost",
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    var connection = mysql.createConnection({
+        // host
+        host: "localhost",
 
-    // Port
-    Port: 3306,
+        // Port
+        Port: 3306,
 
-    // user
-    user: "root",
+        // user
+        user: "root",
 
-    // password
-    password:process.env.MYSQL_KEY,
+        // password
+        password: process.env.MYSQL_KEY,
 
-    // database
-    database: "burgers_db"
-});
+        // database
+        database: "burgers_db"
+    });
+};
 
 // Make connection.
 connection.connect(function (err) {
